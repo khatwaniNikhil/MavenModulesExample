@@ -1,0 +1,15 @@
+*.class
+
+# Package Files #
+*.war
+*.ear
+*.DS_Store
+*.classpath
+*.project
+*.settings
+*bin
+*logs
+*.idea*
+*.idea/workspace.xml
+*build/
+*deploy/
