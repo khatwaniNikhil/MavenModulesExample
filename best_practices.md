@@ -11,5 +11,14 @@
 3. Multi module project as Inheritance
     1. avoid duplicacy/reuse shared configuration and dependencies across maven projects – bottom to up by specifying top level pom as parent in the sub modules. For example customer exposed webapp and internal admin web-app if using same tech stack like spring framework we can carve out shared stuff to parent and reuse accordingly
     2. Note: same multi module project can act as aggregated as well as inherited multimodule project
-4. To customize the default behavior of Maven and supply some organization-specific information to configure deployment settings and build profiles, organizations define a top-level corporate POM that serves as the default parent when a project doesn’t have any good reason to depend on another
-5. minimal duplication of configuration is a small price to pay for allowing projects like client-side and server-side to remain completely independent. 
+4. To customize the default behavior of Maven and supply some organization-specific information to configure deployment settings and build profiles, organizations define a top-level corporate POM that serves as the default parent when a project doesn’t have any good reason to depend on another.
+5. Aggregation and inheritance does not mean same thing. Refer below example:
+   
+   ![image](https://github.com/khatwaniNikhil/MavenModulesExample/assets/3686308/7bbdbad9-ff61-47ec-8625-086246886220)
+
+   
+6. Refer below image for real world reference mutli module project setup with aggregation and inheritance applied -
+    1. Minimal duplication of configuration is a small price to pay for allowing projects like client-side and server-side to remain completely independent.
+
+![image](https://github.com/khatwaniNikhil/MavenModulesExample/assets/3686308/baf74d8a-75ff-4f4a-84ec-1f2a77d514da)
+
